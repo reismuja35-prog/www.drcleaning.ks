@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DrCleaning.Ks — Pastrimi profesional</title>
+  <meta name="description" content="DrCleaning.Ks - Pastrim profesional i divaneve, interiorit të veturave, karrigeve dhe hapësirave të lokaleve në Gjilan, Prishtinë, Prizren dhe Ferizaj." />
+  <style>
+    :root{--accent:#71b8ff;--dark:#0b1220;--muted:#6b7280;--bg:#e9f4ff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--dark); background:var(--bg)}
+    header{background:linear-gradient(90deg, #ffffff, #e9f4ff); padding:28px 16px; border-bottom:1px solid #e6eef0}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;background:var(--accent);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav{margin-left:auto}
+    .contact{display:flex;gap:12px;align-items:center}
+    a.button{background:var(--accent);color:white;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:600;transition:0.25s;box-shadow:0 6px 18px rgba(113,184,255,0.3)}
+a.button:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(113,184,255,0.45)}{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+
+    .hero{padding:48px 0;display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .card{background:white;border-radius:18px;padding:22px;box-shadow:0 10px 28px rgba(11,18,32,0.08);backdrop-filter:blur(4px)}
+
+    .service{padding:22px;border-radius:14px;border:1px solid #d6e9ff;background:linear-gradient(180deg,#ffffff,#f4f9ff);transition:0.25s}
+.service:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(113,184,255,0.25)}s{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .service{padding:18px;border-radius:12px;border:1px solid #eef6f6;background:linear-gradient(90deg, #ffffff, #e9f4ff)}
+    .service h3{margin:0 0 8px}
+    .locations{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .loc{background:#fff;padding:8px 12px;border-radius:999px;border:1px solid #e6f2f2}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:10px}
+
+    footer{padding:28px 0;margin-top:28px}
+    .small{color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.gallery{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:520px){.gallery{grid-template-columns:1fr}.contact{flex-direction:column;align-items:flex-end}}
+  /* Smooth scroll */
+html{scroll-behavior:smooth}
+
+/* Image hover zoom */
+.gallery img{transition:0.4s}
+.gallery img:hover{transform:scale(1.06);box-shadow:0 8px 18px rgba(0,0,0,0.18)}
+
+/* Modal offer popup */
+#offerModal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;visibility:hidden;opacity:0;transition:0.4s;z-index:9999}
+#offerModal .box{background:white;padding:24px;border-radius:14px;max-width:420px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.25)}
+#offerModal.visible{visibility:visible;opacity:1}
+
+/* Carousel */
+.carousel{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;padding-bottom:6px}
+.carousel img{width:280px;height:180px;object-fit:cover;border-radius:12px;scroll-snap-align:center}
+
+</style>
+<style>
+  /* Smooth fade-in animations on scroll */
+  .reveal{opacity:0;transform:translateY(20px);transition:0.8s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  /* New modern font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  body{font-family:'Poppins', sans-serif}
+
+  /* Light soft textured background */
+  body{
+    background:var(--bg) url('https://www.transparenttextures.com/patterns/white-diamond.png');
+  }
+</style>
+
+<script>
+  // Fade-in on scroll behavior
+  document.addEventListener('scroll', () => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 80) el.classList.add('visible');
+    });
+  });
+</script>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div class="logo" style="background:none;padding:0"><img src="/mnt/data/08d00714-cdc2-4c61-8ce7-1aa17d69fc19.jpg" alt="DrCleaning.Ks Logo" style="width:56px;height:56px;object-fit:contain;border-radius:10px" /></div>
+        <div>
+          <div style="font-weight:700">DrCleaning.Ks</div>
+          <div class="small">Pastrim profesional • Gjilan • Prishtinë • Prizren • Ferizaj</div>
+        </div>
+      </div>
+      <nav class="contact" style="margin-left:auto">
+        <div class="small">Na kontaktoni</div>
+        <a class="button" href="tel:+38343511844">+383 43 511 844</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="reveal" class="hero">
+      <div>
+        <h1>Pastrim profesional për shtëpinë, biznesin dhe makinën tuaj</h1>
+        <p>Ne në DrCleaning.Ks ofrojmë shërbime të specializuara pastrimi — divanë, interior veturash, karrige dhe hapësira të lokaleve dhe bareve. Përdorim teknika dhe detergjentë profesionalë për rezultate të thella dhe të sigurt.</p>
+
+        <div class="services">
+          <div class="service card">
+            <h3>Pastrimi i divaneve</h3>
+            <p class="small">Heqja e njollave, pastrimi i thellë i shtresave dhe dezinfektimi. Në vend ose me marrje.</p>
+          </div>
+
+          <div class="service card">
+            <h3>Pastrimi i interiorit të veturave</h3>
+            <p class="small">Shpëlajje dhe aspirim, trajtim i upholstery, pastrim i paneleve dhe dezodorizim.</p>
+          </div>
+
+          <div class="service card">
+            <h3>Pastrimi i karrigeve</h3>
+            <p class="small">Pastrim profesional për karrige të lokaleve, restoranteve dhe zyrave — i përshtatshëm për sasi të mëdha.</p>
+          </div>
+
+          <div class="service card">
+            <h3>Pastrimi i lokaleve dhe bareve</h3>
+            <p class="small">Intervara, kollonat, sipërfaqet që preken shpesh dhe pastrimi i detajuar i hapësirave publike.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <a class="button" href="tel:+38343511844">Thirr tani: +383 43 511 844</a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Na caktoni një takim</h3>
+          <p class="small">Jepni detajet dhe ne do të kontaktojmë për konfirmim.</p>
+          <form action="mailto:info@drcleaning.ks" method="post" enctype="text/plain">
+            <label class="small">Emri<br><input name="Emri" required style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #e6eef0" /></label>
+            <label class="small" style="display:block;margin-top:8px">Numri i telefonit<br><input name="Telefon" required style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #e6eef0" /></label>
+            <label class="small" style="display:block;margin-top:8px">Shërbimi (p.sh. divan, veturë)<br><input name="Sherbimi" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #e6eef0" /></label>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <button class="button" type="submit">Dërgo</button>
+              <a href="tel:+38343511844" class="small" style="align-self:center;text-decoration:none;color:var(--accent)">Ose thirr: +383 43 511 844</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Lokacionet tona</h4>
+          <div class="locations">
+            <div class="loc">Gjilan</div>
+            <div class="loc">Prishtinë</div>
+            <div class="loc">Prizren</div>
+            <div class="loc">Ferizaj</div>
+          </div>
+          <p class="small" style="margin-top:8px">Ofrojmë shërbime në këto qytete. Për zona të tjera, kontaktoni +383 43 511 844.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="reveal">
+      <h2 style="margin-top:8px">Galeria - punët e kryera</h2>
+      <div class="gallery" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1581579181713-1e45b3b8a7b1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Pastrim divani" />
+        <img src="https://images.unsplash.com/photo-1560185008-5b0914b2a7b6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Pastrim veture" />
+        <img src="https://images.unsplash.com/photo-1581579181720-6b2f6b2a7b2b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Pastrim karriges" />
+      </div>
+    </section>
+
+<section class="reveal" class="promo">
+  <h2 style="margin-top:24px">Oferta & Reklamë</h2>
+  <div class="card" style="padding:0;overflow:hidden">
+    <img src="/mnt/data/02bba764-ea5c-4c30-86a0-8c90c1d8fd23.jpg" alt="Reklamë DrCleaning.Ks" style="width:100%;display:block" />
+  </div>
+</section>
+
+<section class="reveal" class="video">
+  <h2 style="margin-top:24px">Procesi i Punës</h2>
+  <div class="card" style="padding:0;overflow:hidden">
+    <video controls style="width:100%;display:block;border-radius:12px">
+      <source src="video_placeholder.mp4" type="video/mp4" />
+      Videoja nuk mund të shfaqet.
+    </video>
+  </div>
+</section>
+
+<section class="reveal" class="social" style="margin-top:28px">
+  <h2>Na ndiqni</h2>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+    <a href="https://www.instagram.com/drcleaning.ks/" target="_blank" style="background:#E1306C;color:white;padding:10px 16px;border-radius:10px;font-weight:600;text-decoration:none">Instagram</a>
+    <a href="https://wa.me/38343511844" target="_blank" style="background:#25D366;color:white;padding:10px 16px;border-radius:10px;font-weight:600;text-decoration:none">WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <div>
+          <div style="font-weight:700">DrCleaning.Ks</div>
+          <div class="small">Tel: <a href="tel:+38343511844">+383 43 511 844</a> • Email: info@drcleaning.ks</div>
+        </div>
+        <div class="small">© "DrCleaning.Ks" — Të gjitha të drejtat e rezervuara.</div>
+      </div>
+    </footer>
+  </main>
+<script>
+// Offer popup auto-show after 2 seconds
+setTimeout(()=>{document.getElementById('offerModal').classList.add('visible')},2000)
+
+// Close modal
+function closeOffer(){document.getElementById('offerModal').classList.remove('visible')}
+</script>
+
+<!-- Offer Modal -->
+<div id="offerModal">
+  <div class="box">
+    <h3>Ofertë Speciale!</h3>
+    <p>Merr pastrim profesional me zbritje sezonale. Na kontakto tani!</p>
+    <a href="https://wa.me/38343511844" style="background:#25D366;color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block;margin-top:10px">Kontakto në WhatsApp</a>
+    <div style="margin-top:8px">
+      <button onclick="closeOffer()" style="background:none;border:none;color:#555;font-size:14px;margin-top:10px">Mbylle</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
